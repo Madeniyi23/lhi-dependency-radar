@@ -63,5 +63,4 @@ This is about:
 
 Place your image in a folder like:
 
-``` id="7l6z9o"
 ![Dependency Radar Output](examples/sample_output.png)
