@@ -1,8 +1,49 @@
 # LHI Dependency Radar
 
-**See what breaks before it breaks.**
+## Before you delete a layer… do you know what will break?
+
+Most ArcGIS Online environments grow fast:
+
+- Web Maps  
+- Dashboards  
+- Experience Builder apps  
+- StoryMaps  
+
+Over time, dependencies become invisible.
+
+So when someone:
+- deletes a layer  
+- renames a field  
+- migrates a service  
+
+👉 things break — silently.
 
 LHI Dependency Radar is a Python script for ArcGIS Online and ArcGIS Enterprise that helps GIS teams find where a hosted feature layer is being used across common item types before making risky changes.
+
+## What this tool does
+
+LHI Dependency Radar scans your ArcGIS Online environment and identifies where a hosted feature layer is used.
+
+It helps you understand:
+- which maps and apps depend on a layer  
+- how it is referenced (item ID, service URL)  
+- how many items may be impacted
+
+## Why it matters
+
+This is not about GIS.
+
+This is about:
+- reducing risk  
+- improving change confidence  
+- enabling better governance  
+
+## Who this is for
+
+- GIS Analysts  
+- GIS Administrators  
+- Municipal GIS Teams  
+- Anyone managing ArcGIS Online content  
 
 ## Why it exists
 
@@ -12,6 +53,11 @@ A common ArcGIS Online bottleneck is dependency visibility. Teams want to know:
 - What might break if I update the schema or swap a service?
 
 This tool is a lightweight first pass at solving that problem.
+
+## Installation
+
+```bash
+pip install arcgis pandas
 
 ## Current version
 
